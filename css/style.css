@@ -1,0 +1,114 @@
+
+
+html, body{
+	background-color:#000;
+	margin:0; 
+	padding:0;
+
+}
+
+.hide {
+	display:none;
+}
+
+/* styles needed by the plugin */
+.animatedwrapper {
+  overflow: hidden;
+  max-height: 169px;
+
+}
+.animatedimage {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+
+}
+.animatedimage > * {
+  position: absolute;
+  display: inline-block;
+  visibility: hidden;
+  border: 0;
+}
+/* the image that will show while waiting for javascript to load, and what users without javascript will see - if you don't want to use a class you might use *:first-child to select this instead */
+.animatedimage > .poster {
+  position: static;
+  visibility: visible;
+}
+/* spritesheets will rely on left/top positioning */
+.animatedimage[data-spritesize] > * {
+  position: relative;
+}
+
+.container {
+  padding: 0;
+}
+
+/* banner */
+
+
+#demo {
+	width: 300px;
+	height: 250px;
+	position:relative;
+	background:url(../imgs/top-bg.png) no-repeat  #e1e1e1;
+	
+}
+
+.logo {
+	position: absolute;
+	width: 87px;
+	height: 54px;
+	z-index: 4;
+	top:0;
+	left:106px;
+}
+
+.text {
+	position: absolute;
+	width: 267px;
+	height: 208px;
+	z-index: 3;
+	top:0;
+	left:33px;
+	background: url(../imgs/text-sprite.png);
+	background-position:0 0;
+
+}
+
+.panel1 .text{
+	
+}
+
+.panel2 .text{
+	background-position:0 -208px;
+}
+
+.panel3 .text{
+	background-position:0 -416px;
+}
+
+.isiContainer {
+	
+	height:83px;
+
+}
+
+.button1, .button2{
+	position: absolute;
+	width: 267px;
+	height: 208px;
+	z-index: 3;
+	top:126px;
+	
+}
+
+.button1 {
+	left:106px;	
+}
+
+.button2 {
+	left:257px;
+}
