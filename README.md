@@ -1,6 +1,11 @@
 # greensock-banner
 Proof of concept video > spritesheet conversion and using greensock to accelerate spritesheet animation.  Works on mobile too!
 
+Demo : http://smartcookiemedia.github.io/greensock-banner/index.html
+
+Notes 
+
+*************************************************
 
 Image compression and sprite sheet:
 
